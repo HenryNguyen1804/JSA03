@@ -1,0 +1,89 @@
+body {
+  height: 10000px;
+  font-family: "Roboto Mono", monospace;
+}
+header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/public/hero-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.nav-bar-container .nav-bar-img img {
+  margin-left: 15%;
+}
+.nav-bar-container .nav-bar-img img {
+  width: 30%;
+}
+.fixed-nav-bar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.nav-bar-container {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.nav-bar-container .nav-bar {
+  margin-right: 5%;
+}
+.nav-bar-container .nav-bar ul {
+  display: flex;
+}
+.nav-bar-container .nav-bar ul li {
+  margin-right: 40px;
+  font-size: 20px;
+}
+.nav-bar-container .nav-bar ul li a {
+  cursor: pointer;
+  color: white;
+}
+.nav-bar-container .nav-bar ul li a:hover {
+  text-decoration: underline #d1603d;
+}
+
+.slogan-container {
+  display: flex;
+  margin-left: 15%;
+  align-items: center;
+  font-size: 240%;
+}
+.slogan-container .slogan h2 {
+  color: white;
+}
+.slogan-container .slogan-btn-container {
+  background-color: #e67e22;
+  border: 1px solid #e67e27;
+}
+.slogan-btn-container a:nth-child(1) {
+  color: white;
+  font-weight: 100px;
+}
+
+.content-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  line-height: 0;
+}
+.content-2 div {
+  overflow: hidden;
+  background-color: black;
+}
+.content-2 div img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+.content-2 div img:hover {
+  opacity: 1;
+  transform: scale(1);
+}
