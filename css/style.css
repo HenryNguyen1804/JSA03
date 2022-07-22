@@ -2,21 +2,29 @@ body {
   height: 10000px;
   font-family: "Roboto Mono", monospace;
 }
+.underline{
+  width: 100px;
+  height: 2px;
+  background-color: #d1603d;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 header {
   display: flex;
   align-items: center;
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/public/hero-min.jpg);
+    url(/JSA03-Henry/public/hero-min.jpg);
+    background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
 .nav-bar-container .nav-bar-img img {
-  margin-left: 15%;
+  margin-left: 50%;
 }
 .nav-bar-container .nav-bar-img img {
-  width: 30%;
+  width: 40%;
 }
 .fixed-nav-bar {
   width: 100%;
@@ -59,7 +67,7 @@ header {
 }
 .slogan-container .slogan-btn-container {
   background-color: #e67e22;
-  border: 1px solid #e67e27;
+  border: 1px solid none;
 }
 .slogan-btn-container a:nth-child(1) {
   color: white;
@@ -86,4 +94,59 @@ header {
 .content-2 div img:hover {
   opacity: 1;
   transform: scale(1);
+}
+.content-1{
+  max-width: 1346px;
+  margin: 0 auto;
+}
+
+.content-1 .row-1{
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.content-1 .row-2{
+  display: flex;
+}
+.content-1 .row-2 div{
+  margin-right: 20px;
+}
+.content-1 .row-2 div div:nth-child(2){
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+.content-4 {
+  max-width: 1346px;
+  margin: 0 auto;
+}
+ .content-4 .row-1{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.content-4 .row-2{
+  display: flex;
+  justify-content: center;
+}
+.content-4 .row-2 div{
+  margin-right: 20px;
+}
+.content-4 .row-2 div div:nth-child(1) img{
+  width: 100%;
+  height: auto;
+}
+.content-4 .row-2 div:nth-child(2) p:nth-child(2)::before{
+  content: "";
+    display: block;
+    background: url("/JSA03-Henry/public/icons8-clock.svg") no-repeat;
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 0 6px 0 0;
 }
