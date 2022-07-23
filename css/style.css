@@ -2,7 +2,7 @@ body {
   height: 10000px;
   font-family: "Roboto Mono", monospace;
 }
-.underline{
+.underline {
   width: 100px;
   height: 2px;
   background-color: #d1603d;
@@ -15,8 +15,8 @@ header {
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(/JSA03-Henry/public/hero-min.jpg);
-    background-attachment: fixed;
+    url(/public/hero-min.jpg);
+  background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -95,58 +95,87 @@ header {
   opacity: 1;
   transform: scale(1);
 }
-.content-1{
+.content-1 {
   max-width: 1346px;
   margin: 0 auto;
 }
 
-.content-1 .row-1{
+.content-1 .row-1 {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.content-1 .row-2{
+.content-1 .row-2 {
   display: flex;
 }
-.content-1 .row-2 div{
+.content-1 .row-2 div {
   margin-right: 20px;
 }
-.content-1 .row-2 div div:nth-child(2){
+.content-1 .row-2 div div:nth-child(2) {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-
 
 .content-4 {
   max-width: 1346px;
   margin: 0 auto;
 }
- .content-4 .row-1{
+.content-4 .row-1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.content-4 .row-2{
+.content-4 .row-2 {
   display: flex;
   justify-content: center;
 }
-.content-4 .row-2 div{
+.content-4 .row-2 div {
   margin-right: 20px;
 }
-.content-4 .row-2 div div:nth-child(1) img{
+.content-4 .row-2 div div:nth-child(1) img {
   width: 100%;
   height: auto;
 }
-.content-4 .row-2 div:nth-child(2) p:nth-child(2)::before{
+.content-4 .row-2 div:nth-child(2) p:nth-child(2)::before {
   content: "";
-    display: block;
-    background: url("/JSA03-Henry/public/icons8-clock.svg") no-repeat;
-    background-size: cover;
-    width: 20px;
-    height: 20px;
-    float: left;
-    margin: 0 6px 0 0;
+  display: block;
+  background: url("/public/icons8-clock.svg") no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 10px 6px 0 0;
+}
+.content-4 .row-2 div:nth-child(2) p:nth-child(3)::before {
+  content: "";
+  display: block;
+  background: url("/public/icons8-clock.svg") no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 10px 6px 0 0;
+}
+.content-5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/public/back-customers-min.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content-5 div div {
+  color: white;
+}
+.content-5 div {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.content-5 .row-2 {
+  display: flex;
+}
+.content-5 .row-2 div {
+  width: 32.26%;
 }
