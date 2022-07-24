@@ -1,0 +1,72 @@
+body {
+  color: white;
+  font-family: "Dosis", sans-serif;
+  margin: 0;
+}
+.day-andtime {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.clock-2 {
+  position: fixed;
+  font-family: inherit;
+  top: 60px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 20px;
+  letter-spacing: 7px;
+}
+.clock {
+  font-family: inherit;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-size: 20px;
+  letter-spacing: 7px;
+}
+.content-1 div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./background.png);
+  object-fit: cover;
+  line-height: 1.2;
+  height: 700px;
+}
+.content-1 .header-btn {
+  margin-top: 24px;
+  background-color: rgb(255, 197, 0);
+  border: transparent;
+  color: rgb(72, 72, 72);
+  border-radius: 8px;
+  padding: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.content-1 div sub {
+  font-size: 24px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.content-1 div h1 {
+  font-size: 48px;
+  color: white;
+}
+.grid-layout div img {
+  width: 100%;
+  height: auto;
+}
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  line-height: 0;
+}
