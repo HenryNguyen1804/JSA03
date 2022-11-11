@@ -2,6 +2,12 @@
   --primary: #8c38ff;
   --light: #eeeeee;
   --dark: #212121;
+  --gradient: linear-gradient(
+    225deg,
+    rgb(142, 197, 252) 0%,
+    rgb(255, 255, 255) 42%,
+    rgb(224, 195, 252) 82%
+  );
 }
 * {
   box-sizing: border-box;
@@ -21,7 +27,7 @@
   justify-content: space-between;
 }
 nav {
-  position: fixed;
+  position: relative;
   top: 0;
   left: 0;
   right: 0;
@@ -127,24 +133,66 @@ nav {
   color: var(--primary);
   background-color: var(--light);
 }
-/* responsive */
-/* responsive */
-/* responsive */
-/* responsive */
-/* responsive */
-@media (min-width: 768px) {
-  .big__meal {
-    display: none;
-  }
-  .menu {
-    display: flex;
-  }
+
+.banner__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner {
+  padding-left: 30px;
+  transform: translateY(30px);
+  background: var(--gradient);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 1280px;
+  height: 600px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner__text:nth-child(1) {
+  padding-left: 20px;
+  font-weight: bolder;
+  font-size: 100px;
+  font-family: "Dancing Script", cursive;
+}
+.banner__btn button:nth-child(1) {
+  padding: 25px 50px;
+  background-color: #9355fd;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 25px;
+}
+.banner__btn button:nth-child(2) {
+  padding: 25px 50px;
+  background-color: #c2e0fd;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 25px;
+}
+.banner__imgs {
+  width: 600px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 45px 20px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.banner__imgs .banner__img {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
 }
 
-.head-of-footer {
-  width: 100%;
-}
-
+/* footer */
+/* footer */
+/* footer */
+/* footer */
+/* footer */
 .footer-description-contaner {
   width: 100%;
   background-color: #f9f9f9;
@@ -235,4 +283,21 @@ nav {
 }
 .owner-licence-picture-container {
   padding-left: 15px;
+}
+/* responsive */
+/* responsive */
+/* responsive */
+/* responsive */
+/* responsive */
+@media (min-width: 768px) {
+  .big__meal {
+    display: none;
+  }
+  .menu {
+    display: flex;
+  }
+}
+
+.head-of-footer {
+  width: 100%;
 }
